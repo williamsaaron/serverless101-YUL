@@ -24,6 +24,10 @@ function main(msg) {
                 var text = condition.text;
                 var temperature = condition.temp;
                 var output = "It is " + temperature + " degrees in " + location + " and " + text;
+
+                // Log the success.
+                console.log(output);
+
                 resolve({msg: output});
             }
         });
